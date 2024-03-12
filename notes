@@ -1,0 +1,6 @@
+Atlas DB:
+nasa-api
+lVB8uRSowASzNAHm
+
+connection string:
+mongodb+srv://nasa-api:<password>@nasacluster.nfva1cg.mongodb.net/?retryWrites=true&w=majority

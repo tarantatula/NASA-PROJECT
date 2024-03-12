@@ -1,0 +1,37 @@
+{
+  "name": "nasa-project-api",
+  "version": "1.0.0",
+  "description": "NASA Mission Control API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "// watchInWindows": "watch in windows has to be --watchAll - --watch will not work. run with np, 'run test-watch'",
+    "test-watch": "jest --watchAll",
+    "//important": "set variable must be terminated with no spaces between them",
+    "// watch": "set PORT=5000&& nodemon src/server.js - port can be set here or in .env file using Dotenv package",
+    "watch": "nodemon src/server.js",
+    "// start": "set PORT=5000&& node src/server.js",
+    "start": "node src/server.js",
+    "// cluster": "set PORT=5000&& pm2 start src/server.js -i max",
+    "cluster": "pm2 start src/server.js -i max"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.3",
+    "dotenv": "^16.4.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.4"
+  }
+}
